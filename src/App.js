@@ -6,7 +6,7 @@ function App() {
   const [phones, setPhones] = useState([]);
 
   useEffect(() => {
-    const serverPhones = fetch('/phones')
+    fetch('/phones')
       .then(response => response.json())
       .then((serverPhones) => {
         setPhones(serverPhones)
