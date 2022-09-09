@@ -1,7 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import smartphone from '../../assets/smartphone.png'
 import { Navbar } from 'react-bootstrap';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -15,7 +14,7 @@ export function NavBar({phones}) {
         <Navbar fixed='top' bg="light" expand="lg">
           <Container fluid>
             <Link to="/">
-            <FontAwesomeIcon icon={faPlus} />
+              <img src={smartphone} className="App-logo" alt="logo" />
             </Link>         
             <Navbar.Brand href="#">Phone Catalog</Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />

@@ -1,0 +1,35 @@
+.App-logo {
+    margin: 10px;
+    height: 25px;
+    pointer-events: none;
+  }
+.links {
+    color: rgba(0,0,0,.55);
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+} 
+.links:hover {
+    color: rgba(0,0,0,.7);
+}
+
+.dropdown-link {   
+    font-weight: 400;
+    padding: 4px 16px;
+    color: #212529;
+    text-align: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.dropdown-link:hover {
+    color: #1e2125;
+}
+
+.dropdown-link:active {
+    color: #fff;
+}
