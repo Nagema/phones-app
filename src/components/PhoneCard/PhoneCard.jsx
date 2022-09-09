@@ -4,13 +4,11 @@ import Card from 'react-bootstrap/Card';
 function PhoneCard({phone}) {
 
   return (
-    <Card>
-        <Card.Img variant="top" src={phone.imageFileName} style={{width: "300px"}} />
+    <Card style={{width: "15em",  margin:"auto", height:"30em"}} >
+        <Card.Img variant="top" src={phone.imageFileName} style={{width: "10em", margin:"auto", paddingTop:"30px"}} />
         <Card.Body>
         <Card.Title>{phone.name}</Card.Title>
-        <Card.Text>
-            {phone.description}
-        </Card.Text>
+        <Card.Text>{phone.description}</Card.Text>
         </Card.Body>
     </Card>
   );
