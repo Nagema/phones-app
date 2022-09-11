@@ -27,7 +27,6 @@ export function NavBar() {
                 navbarScroll
               >
                 <Link className='links' to="/">home</Link>  
-                <Link className='links' to="/favorites/">Favorites</Link>
                 <NavDropdown title="Brands" id="navbarScrollingDropdown">
                   { phones.map(phone=>(
                     <div className='link-container' key={phone.id}>

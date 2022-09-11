@@ -15,7 +15,6 @@ function App() {
               <NavBar />
               <Routes>
                 <Route path='/' element={<PhoneListContainer/> }></Route>
-                <Route path='/favorites' element={<PhoneListContainer/>}></Route>
                 <Route path='/manufacturer/:brandId' element={<PhoneListContainer/>}></Route>
                 <Route path='/detail/:productId' element={<PhoneDetailContainer/>}></Route>
               </Routes>

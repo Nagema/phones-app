@@ -9,7 +9,7 @@ const PhoneDetailContainer = () => {
 
   return (
     <div> {
-      phones.filter((phone) =>  phone.id === Number(productId))
+      phones.filter((phone) => phone.id === Number(productId))
         .map((phone) => (   
           <div key={phone.id}>
             <PhoneDetail phone={phone}/>
