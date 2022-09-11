@@ -14,7 +14,9 @@
 .links:hover {
     color: rgba(0,0,0,.7);
 }
-
+.link-container{
+    margin: 8px;
+}
 .dropdown-link {   
     font-weight: 400;
     padding: 4px 16px;

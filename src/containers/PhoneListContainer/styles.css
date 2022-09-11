@@ -1,5 +1,6 @@
 .phone-list-container {
+    width: 80%;
     margin: auto;
     padding-top: 5em;
-    width: 80%;
+    padding-bottom: 5em;
 }
