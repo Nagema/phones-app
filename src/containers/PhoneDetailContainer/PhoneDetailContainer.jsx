@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom'
 import PhoneDetail from '../../components/PhoneDetail/PhoneDetail';
+import { Phones } from '../../context/PhoneContext';
 
-const PhoneDetailContainer = ({phones}) => {
+const PhoneDetailContainer = () => {
   const { productId } = useParams();
+  const { phones } = useContext(Phones);
 
   return (
     <div> {

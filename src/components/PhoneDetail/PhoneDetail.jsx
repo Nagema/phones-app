@@ -11,7 +11,7 @@ const PhoneDetailContainer = ({phone}) => {
             <Card.Body>
                 <Card.Title>{phone.name}</Card.Title>
                 <Card.Text>Color: {phone.color}</Card.Text>
-                <Card.Text>Price: {phone.price}</Card.Text>
+                <Card.Text>Price: {phone.price} EUR</Card.Text>
                 <Card.Text>Dimensions: {phone.dimensions}</Card.Text>
                 <Card.Text>Processor: {phone.processor}</Card.Text>
             </Card.Body>

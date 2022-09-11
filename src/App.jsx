@@ -4,31 +4,24 @@ import './App.css';
 import { NavBar } from './containers/NavBar/Navbar';
 import PhoneDetailContainer from './containers/PhoneDetailContainer/PhoneDetailContainer';
 import PhoneListContainer from './containers/PhoneListContainer/PhoneListContainer';
+import PhonesProvider from './context/PhoneContext';
 
 function App() {
-
-  const [phones, setPhones] = useState([]);
-
-  useEffect(() => {
-    fetch('/phones')
-      .then(response => response.json())
-      .then((serverPhones) => {
-        setPhones(serverPhones)
-      })
-  }, [])
   
   return (
-    <BrowserRouter>
           <>
-            <NavBar phones={phones}/>
-            <Routes>
-              <Route path='/' element={<PhoneListContainer phones={phones} /> }></Route>
-              <Route path='/favorites' element={<PhoneListContainer phones={phones} />}></Route>
-              <Route path='/manufacturer/:brandId' element={<PhoneListContainer phones={phones} />}></Route>
-              <Route path='/detail/:productId' element={<PhoneDetailContainer phones={phones} />}></Route>
-            </Routes>
+          <PhonesProvider>
+            <BrowserRouter>
+              <NavBar />
+              <Routes>
+                <Route path='/' element={<PhoneListContainer/> }></Route>
+                <Route path='/favorites' element={<PhoneListContainer/>}></Route>
+                <Route path='/manufacturer/:brandId' element={<PhoneListContainer/>}></Route>
+                <Route path='/detail/:productId' element={<PhoneDetailContainer/>}></Route>
+              </Routes>
+            </BrowserRouter>
+          </PhonesProvider>
           </>
-      </BrowserRouter>
   );
 }
 

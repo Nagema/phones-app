@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './styles.css';
 import smartphone from '../../assets/smartphone.png'
 import { Navbar } from 'react-bootstrap';
@@ -6,8 +6,10 @@ import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import { Link } from 'react-router-dom';
+import { Phones } from '../../context/PhoneContext';
 
-export function NavBar({phones}) {
+export function NavBar() {
+  const { phones } = useContext(Phones);
 
   return (
       <div>
