@@ -66,9 +66,15 @@ function PhoneFormContainer() {
       },
       body: JSON.stringify(newPhone),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log('Success:', data);
+      .then(() => {
+        setPhoneName('');
+        setmanufacturer('');
+        setDescription('');
+        setColor('');
+        setPrice('');
+        setImage('');
+        setDimensions('');
+        setProcessor('')
       })
   }
 
