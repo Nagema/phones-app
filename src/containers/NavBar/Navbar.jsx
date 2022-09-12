@@ -26,7 +26,8 @@ export function NavBar() {
                 style={{ maxHeight: '100px' }}
                 navbarScroll
               >
-                <Link className='links' to="/">Home</Link>  
+                <Link className='links' to="/">Home</Link> 
+                <Link className='links' to="/Add-new-phone">Add new phone</Link> 
                 <NavDropdown title="Brands" id="navbarScrollingDropdown">
                   { phones.map(phone=>(
                     <div className='link-container' key={phone.id}>
