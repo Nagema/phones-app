@@ -1,3 +1,19 @@
+# Phone Catalog description
+
+This app is a phone catalog where you can find detailed information when you click on the phone on the main page.
+This app also has a list of brands in the header so you can filter them by manufacturer, there is also an option in the header where you can add phone information and it will show you the new phone on the main page of the app.
+
+# Phone Catalog deploy
+this app has been deployed with render.com
+https://phones-app.onrender.com/
+
+# Server
+  This app is using express.js for the server and is using a json for data persistence
+  https://dashboard.render.com/
+  
+# Styles using react bootstrap
+https://react-bootstrap.github.io/getting-started/introduction/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
