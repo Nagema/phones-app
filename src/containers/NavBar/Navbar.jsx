@@ -11,6 +11,8 @@ import { Phones } from '../../context/PhoneContext';
 export function NavBar() {
   const { phones } = useContext(Phones);
 
+  const manufacturers = phones.map(phone => phone.manufacturer);
+  const listOfManufactures = new Set(manufacturers);
   return (
       <div>
         <Navbar fixed='top' bg="light" expand="lg">
@@ -29,9 +31,9 @@ export function NavBar() {
                 <Link className='links' to="/">Home</Link> 
                 <Link className='links' to="/Add-new-phone">Add new phone</Link> 
                 <NavDropdown title="Brands" id="navbarScrollingDropdown">
-                  { phones.map(phone=>(
-                    <div className='link-container' key={phone.id}>
-                      <Link className='dropdown-link'to={`/manufacturer/${phone.manufacturer}`}>{phone.manufacturer}</Link>
+                  { Array.from(listOfManufactures).map((phone, index) => (
+                    <div className='link-container' key={index}>
+                      <Link className='dropdown-link'to={`/manufacturer/${phone}`}>{phone}</Link>
                     </div>
                     ))
                   }
