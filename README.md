@@ -3,6 +3,9 @@
 This app is a phone catalog where you can find detailed information when you click on the phone on the main page.
 This app also has a list of brands in the header so you can filter them by manufacturer, there is also an option in the header where you can add phone information and it will show you the new phone on the main page of the app.
 
+
+![Grabación-de-pantalla-2022-11-11-a-las-0 31 13](https://user-images.githubusercontent.com/40359358/201228138-93007f41-ea6f-4cc3-bafc-bb6d5bb66c5b.gif)
+
 # Phone Catalog deploy
 this app has been deployed with render.com
 https://phones-app.onrender.com/
